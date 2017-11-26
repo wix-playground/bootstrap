@@ -1,3 +1,5 @@
 #!/bin/bash
 
-node_modules/grunt-cli/bin/grunt build:ci
+rm -rf dist
+
+node_modules/grunt-cli/bin/grunt build

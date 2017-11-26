@@ -1,6 +1,6 @@
 {
   "name": "angular-ui-bootstrap-booking",
-  "main": "dist/ui-bootstrap-tpls-0.13.2.js",
+  "main": ["dist/ui-bootstrap-tpls.js", "dist/ui-bootstrap-tpls.min.js", "dist/ui-bootstrap-csp.css", "dist/ui-bootstrap.js", "dist/ui-bootstrap.min.js"],
   "version": "1.0.0",
   "homepage": "https://github.com/",
   "authors": [

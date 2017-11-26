@@ -1,7 +1,7 @@
 {
   "author": "https://github.com/angular-ui/bootstrap/graphs/contributors",
   "name": "angular-ui-bootstrap-booking",
-  "version": "0.13.2",
+  "version": "0.13.3",
   "homepage": "http://angular-ui.github.io/bootstrap/",
   "dependencies": {},
   "repository": {
@@ -38,7 +38,7 @@
   "scripts": {
     "build": "./build.sh",
     "test": ":",
-    "release": "wnpm-release --no-shrinkwrap; bower-auto-release --dist ."
+    "release": "wnpm-release --no-shrinkwrap; bower-auto-release"
   },
   "private": true,
   "publishConfig": {
