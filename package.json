@@ -38,7 +38,7 @@
   "scripts": {
     "build": "./build.sh",
     "test": ":",
-    "release": "wnpm-release --no-shrinkwrap; bower-auto-release"
+    "release": "wnpm-release --no-shrinkwrap; bower-auto-release --git-repo git@github.com:wix/bootstrap"
   },
   "private": true,
   "publishConfig": {
