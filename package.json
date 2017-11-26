@@ -1,6 +1,6 @@
 {
   "author": "https://github.com/angular-ui/bootstrap/graphs/contributors",
-  "name": "angular-ui-bootstrap",
+  "name": "angular-ui-bootstrap-booking",
   "version": "0.13.1",
   "homepage": "http://angular-ui.github.io/bootstrap/",
   "dependencies": {},
@@ -31,6 +31,11 @@
     "node-markdown": "0.1.1",
     "semver": "^4.3.3",
     "shelljs": "^0.4.0"
+  },
+  "scripts": {
+    "build": "grunt",
+    "test": ":",
+    "release": ":"
   },
   "license": "MIT"
 }
