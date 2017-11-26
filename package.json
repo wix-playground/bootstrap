@@ -35,8 +35,7 @@
   },
   "scripts": {
     "build": "./build.sh",
-    "test": ":",
-    "release": ":"
+    "test": ":"
   },
   "license": "MIT"
 }
