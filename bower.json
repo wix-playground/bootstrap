@@ -1,0 +1,19 @@
+{
+  "name": "angular-ui-bootstrap-booking",
+  "main": ["dist/ui-bootstrap-tpls-0.13.1.js", "ui-bootstrap-0.13.1.js", "ui-bootstrap-0.13.1-csp.css"],
+  "version": "1.0.0",
+  "homepage": "https://github.com/",
+  "authors": [
+      "https://github.com/angular-ui/bootstrap/graphs/contributors"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests",
+      "index.html"
+  ]
+}
