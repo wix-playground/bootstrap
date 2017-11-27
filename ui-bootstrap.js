@@ -2,11 +2,11 @@
  * angular-ui-bootstrap-booking
  * http://angular-ui.github.io/bootstrap/
 
- * Version: 0.13.6 - 2017-11-26
+ * Version: 0.13.7 - 2017-11-27
  * License: MIT
  */
-angular.module("ui.bootstrap", ["ui.bootstrap.collapse","ui.bootstrap.accordion","ui.bootstrap.alert","ui.bootstrap.bindHtml","ui.bootstrap.buttons","ui.bootstrap.carousel","ui.bootstrap.dateparser","ui.bootstrap.position","ui.bootstrap.datepicker","ui.bootstrap.dropdown","ui.bootstrap.modal","ui.bootstrap.pagination","ui.bootstrap.tooltip","ui.bootstrap.popover","ui.bootstrap.progressbar","ui.bootstrap.rating","ui.bootstrap.tabs","ui.bootstrap.timepicker","ui.bootstrap.transition","ui.bootstrap.typeahead"]);
-angular.module('ui.bootstrap.collapse', [])
+angular.module("ui.bootstrap", ["ui.bootstrap.booking.collapse","ui.bootstrap.booking.accordion","ui.bootstrap.booking.alert","ui.bootstrap.booking.bindHtml","ui.bootstrap.booking.buttons","ui.bootstrap.booking.carousel","ui.bootstrap.booking.dateparser","ui.bootstrap.booking.position","ui.bootstrap.booking.datepicker","ui.bootstrap.booking.dropdown","ui.bootstrap.booking.modal","ui.bootstrap.booking.pagination","ui.bootstrap.booking.tooltip","ui.bootstrap.booking.popover","ui.bootstrap.booking.progressbar","ui.bootstrap.booking.rating","ui.bootstrap.booking.tabs","ui.bootstrap.booking.timepicker","ui.bootstrap.booking.transition","ui.bootstrap.booking.typeahead"]);
+angular.module('ui.bootstrap.booking.collapse', [])
 
   .directive('collapse', ['$animate', function ($animate) {
 
@@ -67,7 +67,7 @@ angular.module('ui.bootstrap.collapse', [])
     };
   }]);
 
-angular.module('ui.bootstrap.accordion', ['ui.bootstrap.collapse'])
+angular.module('ui.bootstrap.booking.accordion', ['ui.bootstrap.booking.collapse'])
 
 .constant('accordionConfig', {
   closeOthers: true
@@ -200,7 +200,7 @@ angular.module('ui.bootstrap.accordion', ['ui.bootstrap.collapse'])
 
 ;
 
-angular.module('ui.bootstrap.alert', [])
+angular.module('ui.bootstrap.booking.alert', [])
 
 .controller('AlertController', ['$scope', '$attrs', function ($scope, $attrs) {
   $scope.closeable = !!$attrs.close;
@@ -232,7 +232,7 @@ angular.module('ui.bootstrap.alert', [])
   };
 }]);
 
-angular.module('ui.bootstrap.bindHtml', [])
+angular.module('ui.bootstrap.booking.bindHtml', [])
 
   .value('$bindHtmlUnsafeSuppressDeprecated', false)
 
@@ -247,7 +247,7 @@ angular.module('ui.bootstrap.bindHtml', [])
       });
     };
   }]);
-angular.module('ui.bootstrap.buttons', [])
+angular.module('ui.bootstrap.booking.buttons', [])
 
 .constant('buttonConfig', {
   activeClass: 'active',
@@ -330,7 +330,7 @@ angular.module('ui.bootstrap.buttons', [])
 * AngularJS version of an image carousel.
 *
 */
-angular.module('ui.bootstrap.carousel', [])
+angular.module('ui.bootstrap.booking.carousel', [])
 .controller('CarouselController', ['$scope', '$element', '$interval', '$animate', function ($scope, $element, $interval, $animate) {
   var self = this,
     slides = self.slides = $scope.slides = [],
@@ -688,7 +688,7 @@ function ($animate) {
 
 ;
 
-angular.module('ui.bootstrap.dateparser', [])
+angular.module('ui.bootstrap.booking.dateparser', [])
 
 .service('dateParser', ['$locale', 'orderByFilter', function($locale, orderByFilter) {
   // Pulled from https://github.com/mbostock/d3/blob/master/src/format/requote.js
@@ -864,7 +864,7 @@ angular.module('ui.bootstrap.dateparser', [])
   }
 }]);
 
-angular.module('ui.bootstrap.position', [])
+angular.module('ui.bootstrap.booking.position', [])
 
 /**
  * A set of utility methods that can be use to retrieve position of DOM elements.
@@ -1017,7 +1017,7 @@ angular.module('ui.bootstrap.position', [])
     };
   }]);
 
-angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.dateparser', 'ui.bootstrap.position'])
+angular.module('ui.bootstrap.booking.datepicker', ['ui.bootstrap.booking.dateparser', 'ui.bootstrap.booking.position'])
 
 .constant('datepickerConfig', {
   formatDay: 'dd',
@@ -1787,7 +1787,7 @@ function ($compile, $parse, $document, $position, dateFilter, dateParser, datepi
   };
 });
 
-angular.module('ui.bootstrap.dropdown', ['ui.bootstrap.position'])
+angular.module('ui.bootstrap.booking.dropdown', ['ui.bootstrap.booking.position'])
 
 .constant('dropdownConfig', {
   openClass: 'open'
@@ -2127,7 +2127,7 @@ angular.module('ui.bootstrap.dropdown', ['ui.bootstrap.position'])
   };
 });
 
-angular.module('ui.bootstrap.modal', [])
+angular.module('ui.bootstrap.booking.modal', [])
 
 /**
  * A helper, internal data structure that acts as a map but also allows getting / removing
@@ -2635,7 +2635,7 @@ angular.module('ui.bootstrap.modal', [])
     return $modalProvider;
   });
 
-angular.module('ui.bootstrap.pagination', [])
+angular.module('ui.bootstrap.booking.pagination', [])
 .controller('PaginationController', ['$scope', '$attrs', '$parse', function ($scope, $attrs, $parse) {
   var self = this,
       ngModelCtrl = { $setViewValue: angular.noop }, // nullModelCtrl
@@ -2859,7 +2859,7 @@ angular.module('ui.bootstrap.pagination', [])
  * function, placement as a function, inside, support for more triggers than
  * just mouse enter/leave, html tooltips, and selector delegation.
  */
-angular.module( 'ui.bootstrap.tooltip', [ 'ui.bootstrap.position', 'ui.bootstrap.bindHtml' ] )
+angular.module( 'ui.bootstrap.booking.tooltip', [ 'ui.bootstrap.booking.position', 'ui.bootstrap.booking.bindHtml' ] )
 
 /**
  * The $tooltip service creates tooltip- and popover-like directives as well as
@@ -2888,7 +2888,7 @@ angular.module( 'ui.bootstrap.tooltip', [ 'ui.bootstrap.position', 'ui.bootstrap
    * `options({})` allows global configuration of all tooltips in the
    * application.
    *
-   *   var app = angular.module( 'App', ['ui.bootstrap.tooltip'], function( $tooltipProvider ) {
+   *   var app = angular.module( 'App', ['ui.bootstrap.booking.tooltip'], function( $tooltipProvider ) {
    *     // place tooltips left instead of top by default
    *     $tooltipProvider.options( { placement: 'left' } );
    *   });
@@ -3388,7 +3388,7 @@ function ( $tooltip ,  tooltipHtmlUnsafeSuppressDeprecated ,  $log) {
  * function, placement as a function, inside, support for more triggers than
  * just mouse enter/leave, html popovers, and selector delegatation.
  */
-angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
+angular.module( 'ui.bootstrap.booking.popover', [ 'ui.bootstrap.booking.tooltip' ] )
 
 .directive( 'popoverTemplatePopup', function () {
   return {
@@ -3419,7 +3419,7 @@ angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
   return $tooltip( 'popover', 'popover', 'click' );
 }]);
 
-angular.module('ui.bootstrap.progressbar', [])
+angular.module('ui.bootstrap.booking.progressbar', [])
 
 .constant('progressConfig', {
   animate: true,
@@ -3517,7 +3517,7 @@ angular.module('ui.bootstrap.progressbar', [])
     };
 });
 
-angular.module('ui.bootstrap.rating', [])
+angular.module('ui.bootstrap.booking.rating', [])
 
 .constant('ratingConfig', {
   max: 5,
@@ -3613,7 +3613,7 @@ angular.module('ui.bootstrap.rating', [])
  * AngularJS version of the tabs directive.
  */
 
-angular.module('ui.bootstrap.tabs', [])
+angular.module('ui.bootstrap.booking.tabs', [])
 
 .controller('TabsetController', ['$scope', function TabsetCtrl($scope) {
   var ctrl = this,
@@ -3898,7 +3898,7 @@ angular.module('ui.bootstrap.tabs', [])
 
 ;
 
-angular.module('ui.bootstrap.timepicker', [])
+angular.module('ui.bootstrap.booking.timepicker', [])
 
 .constant('timepickerConfig', {
   hourStep: 1,
@@ -4159,10 +4159,10 @@ angular.module('ui.bootstrap.timepicker', [])
     selected.setHours( dt.getHours(), dt.getMinutes() );
     refresh();
   }
-  
+
   $scope.showSpinners = angular.isDefined($attrs.showSpinners) ?
     $scope.$parent.$eval($attrs.showSpinners) : timepickerConfig.showSpinners;
-  
+
   $scope.incrementHours = function() {
     addMinutes( hourStep * 60 );
   };
@@ -4198,7 +4198,7 @@ angular.module('ui.bootstrap.timepicker', [])
   };
 });
 
-angular.module('ui.bootstrap.transition', [])
+angular.module('ui.bootstrap.booking.transition', [])
 
 .value('$transitionSuppressDeprecated', false)
 /**
@@ -4288,7 +4288,7 @@ function($q ,  $timeout ,  $rootScope ,  $log ,  $transitionSuppressDeprecated) 
   return $transition;
 }]);
 
-angular.module('ui.bootstrap.typeahead', ['ui.bootstrap.position', 'ui.bootstrap.bindHtml'])
+angular.module('ui.bootstrap.booking.typeahead', ['ui.bootstrap.booking.position', 'ui.bootstrap.booking.bindHtml'])
 
 /**
  * A helper service that can parse typeahead's syntax (string provided by users)

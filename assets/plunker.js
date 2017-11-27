@@ -27,7 +27,7 @@ angular.module('plunker', [])
       };
 
       var scriptContent = function(content) {
-        return "angular.module('ui.bootstrap.demo', ['ui.bootstrap']);" + "\n" + content;
+        return "angular.module('ui.bootstrap.booking.demo', ['ui.bootstrap']);" + "\n" + content;
       };
 
       addField('description', 'http://angular-ui.github.io/bootstrap/');
