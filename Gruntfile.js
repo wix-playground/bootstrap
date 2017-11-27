@@ -27,9 +27,9 @@ module.exports = function(grunt) {
     filename: 'ui-bootstrap',
     filenamecustom: '<%= filename %>-custom',
     meta: {
-      modules: 'angular.module("ui.bootstrap", [<%= srcModules %>]);',
-      tplmodules: 'angular.module("ui.bootstrap.tpls", [<%= tplModules %>]);',
-      all: 'angular.module("ui.bootstrap", ["ui.bootstrap.tpls", <%= srcModules %>]);',
+      modules: 'angular.module("ui.bootstrap.bookings", [<%= srcModules %>]);',
+      tplmodules: 'angular.module("ui.bootstrap.bookings.tpls", [<%= tplModules %>]);',
+      all: 'angular.module("ui.bootstrap.bookings", ["ui.bootstrap.bookings.tpls", <%= srcModules %>]);',
       cssInclude: '',
       cssFileBanner: '/* Include this file in your html if you are using the CSP mode. */\n\n',
       cssFileDest: '<%= dist %>/<%= filename %>-csp.css',
