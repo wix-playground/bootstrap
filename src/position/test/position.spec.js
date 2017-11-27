@@ -11,7 +11,7 @@ describe('position elements', function () {
 
   var $position;
 
-  beforeEach(module('ui.bootstrap.position'));
+  beforeEach(module('ui.bootstrap.booking.position'));
   beforeEach(inject(function (_$position_) {
     $position = _$position_;
   }));

@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.dateparser', [])
+angular.module('ui.bootstrap.booking.dateparser', [])
 
 .service('dateParser', ['$locale', 'orderByFilter', function($locale, orderByFilter) {
   // Pulled from https://github.com/mbostock/d3/blob/master/src/format/requote.js

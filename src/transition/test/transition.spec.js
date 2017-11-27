@@ -14,7 +14,7 @@ describe('$transition', function() {
 
   var $transition, $timeout;
 
-  beforeEach(module('ui.bootstrap.transition'));
+  beforeEach(module('ui.bootstrap.booking.transition'));
 
   beforeEach(inject(function(_$transition_, _$timeout_) {
     $transition = _$transition_;

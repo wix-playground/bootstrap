@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.demo').controller('TimepickerDemoCtrl', function ($scope, $log) {
+angular.module('ui.bootstrap.booking.demo').controller('TimepickerDemoCtrl', function ($scope, $log) {
   $scope.mytime = new Date();
 
   $scope.hstep = 1;

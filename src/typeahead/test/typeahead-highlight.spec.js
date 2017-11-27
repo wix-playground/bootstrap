@@ -2,7 +2,7 @@ describe('typeaheadHighlight', function () {
 
   var highlightFilter;
 
-  beforeEach(module('ui.bootstrap.typeahead'));
+  beforeEach(module('ui.bootstrap.booking.typeahead'));
   beforeEach(inject(function (typeaheadHighlightFilter) {
     highlightFilter = typeaheadHighlightFilter;
   }));

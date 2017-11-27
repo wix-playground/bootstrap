@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.rating', [])
+angular.module('ui.bootstrap.booking.rating', [])
 
 .constant('ratingConfig', {
   max: 5,

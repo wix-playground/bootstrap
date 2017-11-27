@@ -1,6 +1,6 @@
 describe('progressbar directive', function () {
   var $rootScope, $compile, element;
-  beforeEach(module('ui.bootstrap.progressbar'));
+  beforeEach(module('ui.bootstrap.booking.progressbar'));
   beforeEach(module('template/progressbar/progressbar.html', 'template/progressbar/progress.html', 'template/progressbar/bar.html'));
   beforeEach(inject(function(_$compile_, _$rootScope_) {
     $compile = _$compile_;

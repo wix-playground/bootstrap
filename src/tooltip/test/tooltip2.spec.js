@@ -2,7 +2,7 @@ describe('tooltip directive', function () {
 
   var $rootScope, $compile, $document, $timeout;
 
-  beforeEach(module('ui.bootstrap.tooltip'));
+  beforeEach(module('ui.bootstrap.booking.tooltip'));
   beforeEach(module('template/tooltip/tooltip-popup.html'));
   beforeEach(module('template/tooltip/tooltip-template-popup.html'));
   beforeEach(module('template/tooltip/tooltip-html-popup.html'));

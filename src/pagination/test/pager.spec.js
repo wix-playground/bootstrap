@@ -1,6 +1,6 @@
 describe('pager directive', function () {
   var $compile, $rootScope, $document, element;
-  beforeEach(module('ui.bootstrap.pagination'));
+  beforeEach(module('ui.bootstrap.booking.pagination'));
   beforeEach(module('template/pagination/pager.html'));
   beforeEach(inject(function(_$compile_, _$rootScope_, _$document_) {
     $compile = _$compile_;
@@ -23,7 +23,7 @@ describe('pager directive', function () {
   function clickPaginationEl(index) {
     getPaginationEl(index).find('a').click();
   }
-  
+
   function getPaginationLinkEl(elem, index) {
     return elem.find('li').eq(index).find('a');
   }
@@ -104,13 +104,13 @@ describe('pager directive', function () {
   it('should blur the "next" link after it has been clicked', function () {
     $document.find('body').append(element);
     var linkEl = getPaginationLinkEl(element, -1);
-    
+
     linkEl.focus();
     expect(linkEl).toHaveFocus();
-    
+
     linkEl.click();
     expect(linkEl).not.toHaveFocus();
-    
+
     element.remove();
   });
 
@@ -126,7 +126,7 @@ describe('pager directive', function () {
 
     element.remove();
   });
-  
+
   describe('`items-per-page`', function () {
     beforeEach(function() {
       $rootScope.perpage = 5;

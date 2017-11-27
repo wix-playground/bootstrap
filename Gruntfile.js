@@ -248,7 +248,7 @@ module.exports = function(grunt) {
 
     var module = {
       name: name,
-      moduleName: enquote('ui.bootstrap.' + name),
+      moduleName: enquote('ui.bootstrap.booking.' + name),
       displayName: ucwords(breakup(name, ' ')),
       srcFiles: grunt.file.expand('src/'+name+'/*.js'),
       cssFiles: grunt.file.expand('src/'+name+'/*.css'),
@@ -292,8 +292,8 @@ module.exports = function(grunt) {
       var depArrayEnd = contents.indexOf(']', depArrayStart);
       var dependencies = contents.substring(depArrayStart + 1, depArrayEnd);
       dependencies.split(',').forEach(function(dep) {
-        if (dep.indexOf('ui.bootstrap.') > -1) {
-          var depName = dep.trim().replace('ui.bootstrap.','').replace(/['"]/g,'');
+        if (dep.indexOf('ui.bootstrap.booking.') > -1) {
+          var depName = dep.trim().replace('ui.bootstrap.booking.','').replace(/['"]/g,'');
           if (deps.indexOf(depName) < 0) {
             deps.push(depName);
             //Get dependencies for this new dependency

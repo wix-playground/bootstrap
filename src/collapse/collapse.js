@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.collapse', [])
+angular.module('ui.bootstrap.booking.collapse', [])
 
   .directive('collapse', ['$animate', function ($animate) {
 

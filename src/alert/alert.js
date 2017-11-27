@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.alert', [])
+angular.module('ui.bootstrap.booking.alert', [])
 
 .controller('AlertController', ['$scope', '$attrs', function ($scope, $attrs) {
   $scope.closeable = !!$attrs.close;

@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($scope) {
+angular.module('ui.bootstrap.booking.demo').controller('ProgressDemoCtrl', function ($scope) {
   $scope.max = 200;
 
   $scope.random = function() {

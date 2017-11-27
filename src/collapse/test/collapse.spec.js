@@ -3,7 +3,7 @@ describe('collapse directive', function () {
   var scope, $compile, $animate;
   var element;
 
-  beforeEach(module('ui.bootstrap.collapse'));
+  beforeEach(module('ui.bootstrap.booking.collapse'));
   beforeEach(module('ngAnimateMock'));
   beforeEach(inject(function(_$rootScope_, _$compile_, _$animate_) {
     scope = _$rootScope_;

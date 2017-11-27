@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.bindHtml', [])
+angular.module('ui.bootstrap.booking.bindHtml', [])
 
   .value('$bindHtmlUnsafeSuppressDeprecated', false)
 

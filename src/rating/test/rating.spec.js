@@ -1,6 +1,6 @@
 describe('rating directive', function () {
   var $rootScope, $compile, element;
-  beforeEach(module('ui.bootstrap.rating'));
+  beforeEach(module('ui.bootstrap.booking.rating'));
   beforeEach(module('template/rating/rating.html'));
   beforeEach(inject(function(_$compile_, _$rootScope_) {
     $compile = _$compile_;

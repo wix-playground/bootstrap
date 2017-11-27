@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.dateparser', 'ui.bootstrap.position'])
+angular.module('ui.bootstrap.booking.datepicker', ['ui.bootstrap.booking.dateparser', 'ui.bootstrap.booking.position'])
 
 .constant('datepickerConfig', {
   formatDay: 'dd',

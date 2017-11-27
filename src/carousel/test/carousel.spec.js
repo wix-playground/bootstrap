@@ -1,5 +1,5 @@
 describe('carousel', function() {
-  beforeEach(module('ui.bootstrap.carousel', function($compileProvider, $provide) {
+  beforeEach(module('ui.bootstrap.booking.carousel', function($compileProvider, $provide) {
     angular.forEach(['ngSwipeLeft', 'ngSwipeRight'], makeMock);
     function makeMock(name) {
       $provide.value(name + 'Directive', []); //remove existing directive if it exists

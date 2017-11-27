@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.demo').controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+angular.module('ui.bootstrap.booking.demo').controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
@@ -34,7 +34,7 @@ angular.module('ui.bootstrap.demo').controller('ModalDemoCtrl', function ($scope
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('ui.bootstrap.demo').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+angular.module('ui.bootstrap.booking.demo').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {

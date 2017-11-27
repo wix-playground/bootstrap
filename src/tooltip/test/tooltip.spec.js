@@ -6,7 +6,7 @@ describe('tooltip', function() {
       tooltipScope;
 
   // load the tooltip code
-  beforeEach(module('ui.bootstrap.tooltip'));
+  beforeEach(module('ui.bootstrap.booking.tooltip'));
 
   // load the template
   beforeEach(module('template/tooltip/tooltip-popup.html'));
@@ -419,7 +419,7 @@ describe('tooltipWithDifferentSymbols', function() {
     var elmBody;
 
     // load the tooltip code
-    beforeEach(module('ui.bootstrap.tooltip'));
+    beforeEach(module('ui.bootstrap.booking.tooltip'));
 
     // load the template
     beforeEach(module('template/tooltip/tooltip-popup.html'));
@@ -451,7 +451,7 @@ describe( 'tooltip positioning', function() {
   var $position;
 
   // load the tooltip code
-  beforeEach(module('ui.bootstrap.tooltip', function ( $tooltipProvider ) {
+  beforeEach(module('ui.bootstrap.booking.tooltip', function ( $tooltipProvider ) {
     $tooltipProvider.options({ animation: false });
   }));
 
@@ -502,7 +502,7 @@ describe( 'tooltipHtml', function() {
   var elm, elmBody, elmScope, tooltipScope, scope;
 
   // load the tooltip code
-  beforeEach(module('ui.bootstrap.tooltip', function ( $tooltipProvider ) {
+  beforeEach(module('ui.bootstrap.booking.tooltip', function ( $tooltipProvider ) {
     $tooltipProvider.options({ animation: false });
   }));
 
@@ -555,7 +555,7 @@ describe( 'tooltipHtmlUnsafe', function() {
   var logWarnSpy;
 
   // load the tooltip code
-  beforeEach(module('ui.bootstrap.tooltip', function ( $tooltipProvider ) {
+  beforeEach(module('ui.bootstrap.booking.tooltip', function ( $tooltipProvider ) {
     $tooltipProvider.options({ animation: false });
   }));
 
@@ -609,7 +609,7 @@ describe( '$tooltipProvider', function() {
       tooltipScope;
 
   describe( 'popupDelay', function() {
-    beforeEach(module('ui.bootstrap.tooltip', function($tooltipProvider){
+    beforeEach(module('ui.bootstrap.booking.tooltip', function($tooltipProvider){
       $tooltipProvider.options({popupDelay: 1000});
     }));
 
@@ -646,7 +646,7 @@ describe( '$tooltipProvider', function() {
     var $body;
 
     beforeEach(module('template/tooltip/tooltip-popup.html'));
-    beforeEach(module('ui.bootstrap.tooltip', function ( $tooltipProvider ) {
+    beforeEach(module('ui.bootstrap.booking.tooltip', function ( $tooltipProvider ) {
         $tooltipProvider.options({ appendToBody: true });
     }));
 
@@ -700,7 +700,7 @@ describe( '$tooltipProvider', function() {
 
   describe( 'triggers', function() {
     describe( 'triggers with a mapped value', function() {
-      beforeEach(module('ui.bootstrap.tooltip', function($tooltipProvider){
+      beforeEach(module('ui.bootstrap.booking.tooltip', function($tooltipProvider){
         $tooltipProvider.options({trigger: 'focus'});
       }));
 
@@ -747,7 +747,7 @@ describe( '$tooltipProvider', function() {
     });
 
     describe( 'triggers with a custom mapped value', function() {
-      beforeEach(module('ui.bootstrap.tooltip', function($tooltipProvider){
+      beforeEach(module('ui.bootstrap.booking.tooltip', function($tooltipProvider){
         $tooltipProvider.setTriggers({ 'customOpenTrigger': 'customCloseTrigger' });
         $tooltipProvider.options({trigger: 'customOpenTrigger'});
       }));
@@ -776,7 +776,7 @@ describe( '$tooltipProvider', function() {
     });
 
     describe( 'triggers without a mapped value', function() {
-      beforeEach(module('ui.bootstrap.tooltip', function($tooltipProvider){
+      beforeEach(module('ui.bootstrap.booking.tooltip', function($tooltipProvider){
         $tooltipProvider.options({trigger: 'fakeTrigger'});
       }));
 

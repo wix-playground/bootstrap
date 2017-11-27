@@ -8,7 +8,7 @@ describe('$modal', function () {
     element.trigger(e);
   };
 
-  beforeEach(module('ui.bootstrap.modal'));
+  beforeEach(module('ui.bootstrap.booking.modal'));
   beforeEach(module('template/modal/backdrop.html'));
   beforeEach(module('template/modal/window.html'));
   beforeEach(module(function(_$controllerProvider_, _$modalProvider_){

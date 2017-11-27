@@ -1,6 +1,6 @@
 describe('datepicker directive', function () {
   var $rootScope, $compile, element;
-  beforeEach(module('ui.bootstrap.datepicker'));
+  beforeEach(module('ui.bootstrap.booking.datepicker'));
   beforeEach(module('template/datepicker/datepicker.html'));
   beforeEach(module('template/datepicker/day.html'));
   beforeEach(module('template/datepicker/month.html'));

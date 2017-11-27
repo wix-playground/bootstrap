@@ -2,7 +2,7 @@ describe('buttons', function () {
 
   var $scope, $compile;
 
-  beforeEach(module('ui.bootstrap.buttons'));
+  beforeEach(module('ui.bootstrap.booking.buttons'));
   beforeEach(inject(function (_$rootScope_, _$compile_) {
     $scope = _$rootScope_;
     $compile = _$compile_;

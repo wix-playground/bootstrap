@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.pagination', [])
+angular.module('ui.bootstrap.booking.pagination', [])
 .controller('PaginationController', ['$scope', '$attrs', '$parse', function ($scope, $attrs, $parse) {
   var self = this,
       ngModelCtrl = { $setViewValue: angular.noop }, // nullModelCtrl

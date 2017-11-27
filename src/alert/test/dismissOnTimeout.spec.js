@@ -2,7 +2,7 @@ describe('dismissOnTimeout', function () {
 
   var scope, $compile, $timeout;
 
-  beforeEach(module('ui.bootstrap.alert'));
+  beforeEach(module('ui.bootstrap.booking.alert'));
   beforeEach(module('template/alert/alert.html'));
   beforeEach(inject(function ($rootScope, _$compile_, _$timeout_) {
     scope = $rootScope;

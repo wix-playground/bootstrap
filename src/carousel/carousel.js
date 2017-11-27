@@ -6,7 +6,7 @@
 * AngularJS version of an image carousel.
 *
 */
-angular.module('ui.bootstrap.carousel', [])
+angular.module('ui.bootstrap.booking.carousel', [])
 .controller('CarouselController', ['$scope', '$element', '$interval', '$animate', function ($scope, $element, $interval, $animate) {
   var self = this,
     slides = self.slides = $scope.slides = [],

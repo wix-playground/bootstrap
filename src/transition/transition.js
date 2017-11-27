@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.transition', [])
+angular.module('ui.bootstrap.booking.transition', [])
 
 .value('$transitionSuppressDeprecated', false)
 /**

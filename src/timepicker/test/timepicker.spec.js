@@ -1,7 +1,7 @@
 describe('timepicker directive', function () {
   var $rootScope, $compile, element;
 
-  beforeEach(module('ui.bootstrap.timepicker'));
+  beforeEach(module('ui.bootstrap.booking.timepicker'));
   beforeEach(module('template/timepicker/timepicker.html'));
   beforeEach(inject(function(_$compile_, _$rootScope_) {
     $compile = _$compile_;

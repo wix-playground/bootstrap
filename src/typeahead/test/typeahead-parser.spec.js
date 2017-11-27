@@ -2,7 +2,7 @@ describe('syntax parser', function () {
 
   var typeaheadParser, scope, filterFilter;
 
-  beforeEach(module('ui.bootstrap.typeahead'));
+  beforeEach(module('ui.bootstrap.booking.typeahead'));
   beforeEach(inject(function (_$rootScope_, _filterFilter_, _typeaheadParser_) {
     typeaheadParser = _typeaheadParser_;
     scope = _$rootScope_;

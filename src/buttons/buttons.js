@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.buttons', [])
+angular.module('ui.bootstrap.booking.buttons', [])
 
 .constant('buttonConfig', {
   activeClass: 'active',

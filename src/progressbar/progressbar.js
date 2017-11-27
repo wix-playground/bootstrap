@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.progressbar', [])
+angular.module('ui.bootstrap.booking.progressbar', [])
 
 .constant('progressConfig', {
   animate: true,

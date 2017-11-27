@@ -1,7 +1,7 @@
 describe('date parser', function () {
   var dateParser;
 
-  beforeEach(module('ui.bootstrap.dateparser'));
+  beforeEach(module('ui.bootstrap.booking.dateparser'));
   beforeEach(inject(function (_dateParser_) {
     dateParser = _dateParser_;
   }));

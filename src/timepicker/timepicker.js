@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.timepicker', [])
+angular.module('ui.bootstrap.booking.timepicker', [])
 
 .constant('timepickerConfig', {
   hourStep: 1,
@@ -259,10 +259,10 @@ angular.module('ui.bootstrap.timepicker', [])
     selected.setHours( dt.getHours(), dt.getMinutes() );
     refresh();
   }
-  
+
   $scope.showSpinners = angular.isDefined($attrs.showSpinners) ?
     $scope.$parent.$eval($attrs.showSpinners) : timepickerConfig.showSpinners;
-  
+
   $scope.incrementHours = function() {
     addMinutes( hourStep * 60 );
   };

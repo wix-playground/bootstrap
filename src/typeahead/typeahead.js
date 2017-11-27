@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.typeahead', ['ui.bootstrap.position', 'ui.bootstrap.bindHtml'])
+angular.module('ui.bootstrap.booking.typeahead', ['ui.bootstrap.booking.position', 'ui.bootstrap.booking.bindHtml'])
 
 /**
  * A helper service that can parse typeahead's syntax (string provided by users)

@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.demo').controller('CarouselDemoCtrl', function ($scope) {
+angular.module('ui.bootstrap.booking.demo').controller('CarouselDemoCtrl', function ($scope) {
   $scope.myInterval = 5000;
   $scope.noWrapSlides = false;
   var slides = $scope.slides = [];

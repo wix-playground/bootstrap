@@ -2,7 +2,7 @@ describe('alert', function () {
   var scope, $compile;
   var element;
 
-  beforeEach(module('ui.bootstrap.alert'));
+  beforeEach(module('ui.bootstrap.booking.alert'));
   beforeEach(module('template/alert/alert.html'));
 
   beforeEach(inject(function ($rootScope, _$compile_) {

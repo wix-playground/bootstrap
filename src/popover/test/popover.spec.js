@@ -6,7 +6,7 @@ describe('popover', function() {
       tooltipScope;
 
   // load the popover code
-  beforeEach(module('ui.bootstrap.popover'));
+  beforeEach(module('ui.bootstrap.booking.popover'));
 
   // load the template
   beforeEach(module('template/popover/popover.html'));

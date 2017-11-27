@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.demo').controller('AccordionDemoCtrl', function ($scope) {
+angular.module('ui.bootstrap.booking.demo').controller('AccordionDemoCtrl', function ($scope) {
   $scope.oneAtATime = true;
 
   $scope.groups = [

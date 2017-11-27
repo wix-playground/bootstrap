@@ -1,8 +1,8 @@
 describe('accordion', function () {
   var $scope;
 
-  beforeEach(module('ui.bootstrap.accordion'));
-  beforeEach(module('ui.bootstrap.collapse'));
+  beforeEach(module('ui.bootstrap.booking.accordion'));
+  beforeEach(module('ui.bootstrap.booking.collapse'));
   beforeEach(module('template/accordion/accordion.html'));
   beforeEach(module('template/accordion/accordion-group.html'));
 

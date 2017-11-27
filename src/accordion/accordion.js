@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.accordion', ['ui.bootstrap.collapse'])
+angular.module('ui.bootstrap.booking.accordion', ['ui.bootstrap.booking.collapse'])
 
 .constant('accordionConfig', {
   closeOthers: true

@@ -1,4 +1,4 @@
-angular.module('ui.bootstrap.dropdown', ['ui.bootstrap.position'])
+angular.module('ui.bootstrap.booking.dropdown', ['ui.bootstrap.booking.position'])
 
 .constant('dropdownConfig', {
   openClass: 'open'

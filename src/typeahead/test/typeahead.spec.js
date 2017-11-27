@@ -3,7 +3,7 @@ describe('typeahead tests', function () {
   var $scope, $compile, $document, $timeout;
   var changeInputValueTo;
 
-  beforeEach(module('ui.bootstrap.typeahead'));
+  beforeEach(module('ui.bootstrap.booking.typeahead'));
   beforeEach(module('template/typeahead/typeahead-popup.html'));
   beforeEach(module('template/typeahead/typeahead-match.html'));
   beforeEach(module(function($compileProvider) {
