@@ -2,7 +2,7 @@
  * angular-ui-bootstrap-booking
  * http://angular-ui.github.io/bootstrap/
 
- * Version: 0.13.9 - 2018-01-06
+ * Version: 0.13.9 - 2018-01-07
  * License: MIT
  */
 angular.module("ui.bootstrap.booking", ["ui.bootstrap.booking.collapse","ui.bootstrap.booking.accordion","ui.bootstrap.booking.alert","ui.bootstrap.booking.bindHtml","ui.bootstrap.booking.buttons","ui.bootstrap.booking.carousel","ui.bootstrap.booking.dateparser","ui.bootstrap.booking.position","ui.bootstrap.booking.datepicker","ui.bootstrap.booking.dropdown","ui.bootstrap.booking.modal","ui.bootstrap.booking.pagination","ui.bootstrap.booking.tooltip","ui.bootstrap.booking.popover","ui.bootstrap.booking.progressbar","ui.bootstrap.booking.rating","ui.bootstrap.booking.tabs","ui.bootstrap.booking.timepicker","ui.bootstrap.booking.transition","ui.bootstrap.booking.typeahead"]);
